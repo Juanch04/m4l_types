@@ -1,0 +1,29 @@
+{
+  "name": "@m4l/types",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "description": "Librería de tipos para el proyecto m4l",
+  "keywords": [],
+  "author": "M4L",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    ".": { "types": "./dist/index.d.ts" },
+    "./api": { "types": "./dist/api/index.d.ts" },
+    "./services": { "types": "./dist/services/index.d.ts" }
+  },
+  "typesVersions": {
+    "*": {
+      "*": ["dist/*"],
+      "api": ["dist/api/index.d.ts"],
+      "services": ["dist/services/index.d.ts"]
+    }
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+export interface DInstrumentsModel {
+  id: number;
+  version: number;
+  active: boolean;
+  instrumentTypeId: number;
+  procedureId: number;
+  coverageCityId: number | null;
+  accountId: number;
+  receiverId: number | null;
+  magnitudeId: number;
+  serie: string | null;
+  reference: string | null;
+  manufacturer: string | null;
+  model: string | null;
+  location: string | null;
+  qtyPoints: number;
+  points: number[];
+  calibrationPeriodYears: number;
+  calibrationPeriodMonths: number;
+  calibrationPeriodDays: number;
+  lastCalibration: Date | null;
+  insurableValue: number | null;
+  measureRangeMin: number | null;
+  measureRangeMax: number | null;
+  measureResolution: number | null;
+  imageUrl: string | null;
+  requireConformity: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+}
